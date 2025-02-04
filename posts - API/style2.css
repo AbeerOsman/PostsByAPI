@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    display: flex; /* to make the content of all the page next to each other*/
+}
+
+.sidebar {
+    width: 340px;
+    background-color: #2f4456;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    text-align: center;
+    padding: 50px;
+    font-weight: 200;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#usersList {
+    list-style: none;
+}
+
+#usersList h3 {
+    text-align: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+#usersList h3:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#usersList h3.active {
+    color: yellow;
+}
+
+.home-button {
+    width: 200px;
+    height: 30px;
+    margin-left: 60px; 
+    padding: 8px;
+    background-color: white;
+    color: #2f4456;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home-button:hover{
+    background-color: #F5ED08;
+    transition: all 0.3s;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 50px;
+}
+
+.mainContent h1{
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.postTitle{
+    background-color: #F2F9FE;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.postContent{
+    background-color: #F2F9FE;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
